@@ -1,0 +1,10 @@
+com\andrey\spring\demo\persistence\entities\GreetingEntity.class
+com\andrey\spring\demo\persistence\dao\GreetingDao.class
+com\andrey\spring\demo\persistence\GreetingDatabase.class
+com\andrey\spring\demo\logger\Logger.class
+com\andrey\spring\demo\controllers\mvc\SimpleMvcController.class
+com\andrey\spring\demo\services\GreetingServiceImpl.class
+com\andrey\spring\demo\persistence\dao\GreetingDaoImpl.class
+com\andrey\spring\demo\services\GreetingService.class
+com\andrey\spring\demo\models\Greeting.class
+com\andrey\spring\demo\controllers\rest\SimpleRestController.class

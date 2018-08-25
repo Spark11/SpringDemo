@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.3.201803200843-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/Spring/rest-config.xml</config>
+		<config>src/main/resources/Spring/services-config.xml</config>
+		<config>src/main/resources/Spring/mvc-config.xml</config>
+		<config>src/main/resources/Spring/persistence-config.xml</config>
+		<config>src/main/resources/Spring/aop-config.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
