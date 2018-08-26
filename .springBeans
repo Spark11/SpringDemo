@@ -12,8 +12,10 @@
 		<config>src/main/resources/Spring/mvc-config.xml</config>
 		<config>src/main/resources/Spring/persistence-config.xml</config>
 		<config>src/main/resources/Spring/aop-config.xml</config>
+		<config>src/main/resources/Spring/security-config.xml</config>
 	</configs>
 	<autoconfigs>
+		<config>src/test/resources/Spring/persistence-config.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
