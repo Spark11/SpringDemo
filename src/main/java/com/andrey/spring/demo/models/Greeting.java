@@ -10,7 +10,14 @@ public class Greeting {
 	public Greeting() {
 		super();
 	}
-	
+
+	public Greeting(String message, String name) {
+		super();
+		this.message = message;
+		this.name = name;
+		this.greetingId = UUID.randomUUID().toString();
+	}
+
 	public Greeting(Greeting greeting) {
 		setGreetingId(greeting.getGreetingId());
 		setMessage(greeting.getMessage());
@@ -78,16 +85,9 @@ public class Greeting {
 		return true;
 	}
 
-	public Greeting(String message, String name) {
-		super();
-		this.message = message;
-		this.name = name;
-		this.greetingId = UUID.randomUUID().toString();
-	}
-
 	@Override
 	public String toString() {
 		return "Greeting [message=" + message + ", name=" + name + ", greetingId=" + greetingId + "]";
 	}
-	
+
 }

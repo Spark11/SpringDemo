@@ -46,10 +46,9 @@ public class SimpleRestController {
 		return response;
 	}
 
-	@RequestMapping(value = "/greetings/create", method = RequestMethod.POST)
-	public ResponseEntity<String> createGreeting(@RequestBody(required = true) String greetingJson) {
-		Gson gson = new Gson();
-		greetingService.createGreeting(gson.fromJson(greetingJson, Greeting.class));
+	@RequestMapping(value = "/greetings/create", method = RequestMethod.POST, consumes = "application/json")
+	public ResponseEntity<String> createGreeting(@RequestBody Greeting greeting) {
+		greetingService.createGreeting(greeting);
 		return new ResponseEntity<String>(HttpStatus.CREATED);
 	}
 

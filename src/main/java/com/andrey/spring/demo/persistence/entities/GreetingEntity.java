@@ -24,6 +24,10 @@ public class GreetingEntity extends Greeting {
 		super(greeting);
 	}
 
+	public GreetingEntity(String message, String name) {
+		super(message, name);
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
@@ -31,10 +35,6 @@ public class GreetingEntity extends Greeting {
 
 	@Version
 	private Long version;
-
-	public GreetingEntity(String message, String name) {
-		super(message, name);
-	}
 
 	public Long getId() {
 		return id;
